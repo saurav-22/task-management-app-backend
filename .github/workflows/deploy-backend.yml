@@ -26,10 +26,10 @@ jobs:
         run: |
           declare -A repos
           repos=(
-            ["user-service"]="051101197314.dkr.ecr.ap-south-1.amazonaws.com/user-service"
-            ["board-service"]="051101197314.dkr.ecr.ap-south-1.amazonaws.com/board-service"
-            ["task-service"]="051101197314.dkr.ecr.ap-south-1.amazonaws.com/task-service"
-            ["comment-service"]="051101197314.dkr.ecr.ap-south-1.amazonaws.com/comment-service"
+            ["user-service"]="051101197314.dkr.ecr.ap-south-1.amazonaws.com/task-app/user-service"
+            ["board-service"]="051101197314.dkr.ecr.ap-south-1.amazonaws.com/task-app/board-service"
+            ["task-service"]="051101197314.dkr.ecr.ap-south-1.amazonaws.com/task-app/task-service"
+            ["comment-service"]="051101197314.dkr.ecr.ap-south-1.amazonaws.com/task-app/comment-service"
           )
           services=("user-service" "board-service" "task-service" "comment-service")
           for service in "${services[@]}"; do
