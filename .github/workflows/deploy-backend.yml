@@ -43,4 +43,4 @@ jobs:
       - name: Trigger ArgoCD Sync
         run: |
           curl -X POST -H "Authorization: Bearer ${{ secrets.ARGOCD_TOKEN }}" \
-          https://argocd-server/api/v1/applications/task-app/sync
+          https://a535a0d03b41b44408b3027a7f41343c-1434604346.ap-south-1.elb.amazonaws.com/api/v1/applications/task-app/sync
