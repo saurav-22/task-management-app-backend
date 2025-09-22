@@ -35,8 +35,8 @@ jobs:
           for service in "${services[@]}"; do
             cd $service
             docker build -t $service .
-            docker tag $service:latest ${repos[$service]}:${{ github.sha }}
-            docker push ${repos[$service]}:${{ github.sha }}
+            docker tag $service:latest ${repos[$service]}:latest
+            docker push ${repos[$service]}:latest
             cd ..
           done
 
